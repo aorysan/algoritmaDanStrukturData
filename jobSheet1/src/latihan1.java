@@ -45,5 +45,6 @@ public class latihan1 {
             System.out.println("Selamat Anda Lulus");
         }
 
+        sc.close();
     }
 }
