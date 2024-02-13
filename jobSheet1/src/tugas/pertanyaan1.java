@@ -28,5 +28,6 @@ public class pertanyaan1 {
                 System.out.println(Arrays.toString(kota[i]));
             }
         }
+        sc.close();
     }
 }

@@ -8,7 +8,6 @@ public class latihan4 {
         System.out.println("Total Pendapatan : " + hasil);
 
         layu();
-        
     }
     
     static int pendapatan () {

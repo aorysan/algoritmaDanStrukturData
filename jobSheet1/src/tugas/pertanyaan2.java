@@ -48,6 +48,6 @@ public class pertanyaan2 {
                 System.out.println("input yang anda masukkan tidak valid");
                 break;
         }
-
+        sc.close();
     }
 }
