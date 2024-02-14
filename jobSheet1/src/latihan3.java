@@ -10,19 +10,19 @@ public class latihan3 {
         System.out.println("===========================");
 
         System.out.print("Masukkan Nilai Angka untuk MK Pancasila : ");
-        int pancasila = sc.nextInt();
+        double pancasila = sc.nextInt();
         System.out.print("Masukkan Nilai Angka untuk MK Konsep Teknologi Informasi : ");
-        int kti = sc.nextInt();
+        double kti = sc.nextInt();
         System.out.print("Masukkan Nilai Angka untuk MK Critical Thinking and Problem Solving : ");
-        int ctps = sc.nextInt();
+        double ctps = sc.nextInt();
         System.out.print("Masukkan Nilai Angka untuk MK Matematika Dasar : ");
-        int md = sc.nextInt();
+        double md = sc.nextInt();
         System.out.print("Masukkan Nilai Angka untuk MK Bahasa Inggris : ");
-        int bi = sc.nextInt();
+        double bi = sc.nextInt();
         System.out.print("Masukkan Nilai Angka untuk MK Dasar Pemrograman : ");
-        int dp = sc.nextInt();
+        double dp = sc.nextInt();
         System.out.print("Masukkan Nilai Angka untuk MK Keselamatan dan Kesehatan Kerja : ");
-        int kkk = sc.nextInt();
+        double kkk = sc.nextInt();
 
         System.out.println("====================");
         System.out.println("Hasil Konversi Nilai");
@@ -46,27 +46,59 @@ public class latihan3 {
 
         System.out.println("===========================");
 
-        
+        double ip = (ip(kkk) + ip(kti) + ip(md) + ip(pancasila) + ip(dp) + ip(bi) + ip(ctps)) / 7;
+        System.out.println("ip : " + ip);
 
         sc.close();
     }
 
-    private static int nilaiHuruf(int x) {
+    static double ip (double y) {
+        y /= 25;
 
-        if (x > 80 && x <= 100) {
-            System.out.print("\t\tA\t\t" + "  4.00\n");
-        } else if (x > 73 && x <= 80) {
-            System.out.print("\t\tB+\t\t" + "  3.50\n");
-        } else if (x > 65 && x <= 73) {
-            System.out.print("\t\tB\t\t" + "  3.00\n");
-        } else if (x > 60 && x <= 65) {
-            System.out.print("\t\tC+\t\t" + "  2.50\n");
-        } else if (x > 50 && x <= 60) {
-            System.out.print("\t\tC\t\t" + "  2.00\n");
-        } else if (x > 39 && x <= 50) {
-            System.out.print("\t\tD\t\t" + "  1.00\n");
-        } else if (x <= 39) {
-            System.out.print("\t\tE\t\t" + "  0\n");
+        if (y > 3.50 && y <= 4.00) {
+            y = 4.00;
+        } else if (y > 3.00 && y <= 3.50) {
+            y = 3.50;
+        } else if (y > 2.50 && y <= 3.00) {
+            y = 3.00;
+        } else if (y > 2.00 && y <= 2.50) {
+            y = 2.50;
+        } else if (y > 1.50 && y <= 2.00) {
+            y = 2.00;
+        } else if (y > 1.00 && y <= 1.50) {
+            y = 1.50;
+        } else if (y <= 1.00) {
+            y = 1.00;
+        }
+
+        return y;
+    }
+
+    private static double nilaiHuruf(double x) {
+
+        x /= 25;
+
+        if (x > 3.50 && x <= 4.00) {
+            x = 4.00;
+            System.out.print("\t\t\tA\t\t\t" + x + "\n");
+        } else if (x > 3.00 && x <= 3.50) {
+            x = 3.50;
+            System.out.print("\t\t\tB+\t\t\t" + x + "\n");
+        } else if (x > 2.50 && x <= 3.00) {
+            x = 3.00;
+            System.out.print("\t\t\tB\t\t\t" + x + "\n");
+        } else if (x > 2.00 && x <= 2.50) {
+            x = 2.50;
+            System.out.print("\t\t\tC+\t\t\t" + x + "\n");
+        } else if (x > 1.50 && x <= 2.00) {
+            x = 2.00;
+            System.out.print("\t\t\tC\t\t\t" + x + "\n");
+        } else if (x > 1.00 && x <= 1.50) {
+            x = 1.50;
+            System.out.print("\t\t\tD\t\t\t" + x + "\n");
+        } else if (x <= 1.00) {
+            x = 1.00;
+            System.out.print("\t\t\tE\t\t\t" + x + "\n");
         }
 
         return x;
