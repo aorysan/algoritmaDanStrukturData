@@ -83,7 +83,7 @@ public class latihan3 {
             System.out.print("\t\t\tA\t\t\t" + x + "\n");
         } else if (x > 3.00 && x <= 3.50) {
             x = 3.50;
-            System.out.print("\t\t\tB+\t\t\t" + x + "\n");
+            System.out.print("\t\t\tB+\t\t" + x + "\n");
         } else if (x > 2.50 && x <= 3.00) {
             x = 3.00;
             System.out.print("\t\t\tB\t\t\t" + x + "\n");

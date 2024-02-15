@@ -17,33 +17,46 @@ public class latihan1 {
         System.out.println("===============================");
         System.out.println("===============================");
 
-        double nA = (double)tugas*0.2 + kuis*0.2 + uts*0.3 + uas*0.4;
-        if (nA > 100 || nA < 0) {
-            System.out.println("Nilai tidak valid");
+        if (tugas < 100 && tugas > 0) {
+            if (kuis < 100 && kuis > 0) {
+                if (uts < 100 && uts > 0) {
+                    if (uas < 100 && uas > 0) {
+                        double nA = (double)tugas*0.2 + kuis*0.2 + uts*0.3 + uas*0.4;
+                        System.out.println("Nilai Akhir : " + nA);
+
+                        if (nA > 80 && nA <= 100) {
+                            System.out.println("Nilai Huruf : A");
+                        } else if (nA > 73 && nA <= 80) {
+                            System.out.println("Nilai Huruf : B+");
+                        } else if (nA > 65 && nA <= 73) {
+                            System.out.println("Nilai Huruf : B");
+                        } else if (nA > 60 && nA <= 65) {
+                            System.out.println("Nilai Huruf : C+");
+                        } else if (nA > 50 && nA <= 60) {
+                            System.out.println("Nilai Huruf : C");
+                        } else if (nA > 39 && nA <= 50) {
+                            System.out.println("Nilai Huruf : D");
+                        } else if (nA <= 39) {
+                            System.out.println("Nilai Huruf : E");
+                        }
+                
+                        System.out.println("===============================");
+                        if (nA > 39 && nA <= 100) {
+                            System.out.println("Selamat Anda Lulus");
+                        }
+                    } else {
+                        System.out.println("Nilai tidak valid");
+                    }
+                } else {
+                    System.out.println("Nilai tidak valid");
+                }
+            } else {
+                System.out.println("Nilai tidak valid");
+            }
         } else {
-            System.out.println("Nilai Akhir : " + nA);
+            System.out.println("Nilai tidak valid");
         }
 
-        if (nA > 80 && nA <= 100) {
-            System.out.println("Nilai Huruf : A");
-        } else if (nA > 73 && nA <= 80) {
-            System.out.println("Nilai Huruf : B+");
-        } else if (nA > 65 && nA <= 73) {
-            System.out.println("Nilai Huruf : B");
-        } else if (nA > 60 && nA <= 65) {
-            System.out.println("Nilai Huruf : C+");
-        } else if (nA > 50 && nA <= 60) {
-            System.out.println("Nilai Huruf : C");
-        } else if (nA > 39 && nA <= 50) {
-            System.out.println("Nilai Huruf : D");
-        } else if (nA <= 39) {
-            System.out.println("Nilai Huruf : E");
-        }
-
-        System.out.println("===============================");
-        if (nA > 39 && nA <= 100) {
-            System.out.println("Selamat Anda Lulus");
-        }
 
         sc.close();
     }

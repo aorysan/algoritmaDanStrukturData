@@ -24,18 +24,25 @@ public class latihan4 {
         for (int i = 0; i < toko.length; i++) {
             hasil += toko[i][0] * 75000;
         }
+        System.out.println("Hasil pendapatan Royal Garden 1 : " + hasil);
+        hasil = 0;
         
         for (int i = 0; i < toko.length; i++) {
             hasil += toko[i][1] * 50000;
         }
-
+        System.out.println("Hasil pendapatan Royal Garden 2 : " + hasil);
+        hasil = 0;
+        
         for (int i = 0; i < toko.length; i++) {
             hasil += toko[i][2] * 60000;
         }
+        System.out.println("Hasil pendapatan Royal Garden 3 : " + hasil);
+        hasil = 0;
 
         for (int i = 0; i < toko.length; i++) {
             hasil += toko[i][3] * 10000;
         }
+        System.out.println("Hasil pendapatan Royal Garden 4 : " + hasil);
         
         return hasil;
     }
