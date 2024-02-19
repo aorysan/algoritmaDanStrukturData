@@ -48,12 +48,12 @@ class Buku06 {
         return total;
     }
 
-    double hitungDiskon() {
-        double diskon = 0;
+    int hitungDiskon() {
+        int diskon = 0;
         if (hitungHargaTotal() > 150000) {
-            diskon = (hitungHargaTotal() * 0.12);
+            diskon = (int)(hitungHargaTotal() * 0.12);
         } else if (hitungHargaTotal() >= 75000 && hitungHargaTotal() <= 150000) {
-            diskon = hitungHargaTotal() * 0.05;
+            diskon = (int)(hitungHargaTotal() * 0.05);
         } else if (hitungHargaTotal() < 75000) {
             System.out.println("Tidak mendapat diskon");
         }
