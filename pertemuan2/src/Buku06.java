@@ -1,17 +1,20 @@
 class Buku06 {
     String judul, pengarang;
     int halaman, stok, harga;
+    int jumlah;
 
     void tampilInformasi() {
+        System.out.println();
         System.out.println("Judul : " + judul);
         System.out.println("Pengarang : " + pengarang);
         System.out.println("Jumlah halaman : " + halaman);
         System.out.println("Sisa stok : " + stok);
         System.out.println("Harga : " + harga);
-
+        System.out.println();
     }
 
     void terjual(int jml) {
+        this.jumlah = jml;
         if (this.stok > 0) {
             this.stok -= jml;
         } else if (jml > this.stok) {
@@ -41,19 +44,18 @@ class Buku06 {
     }
 
     int hitungHargaTotal() {
-        int total = this.harga * (this.stok-terjual().stok);
-
+        int total = this.harga * this.jumlah;
         return total;
     }
 
     double hitungDiskon() {
         double diskon = 0;
         if (hitungHargaTotal() > 150000) {
-            diskon = hitungHargaTotal() * 0.12;
+            diskon = (hitungHargaTotal() * 0.12);
         } else if (hitungHargaTotal() >= 75000 && hitungHargaTotal() <= 150000) {
             diskon = hitungHargaTotal() * 0.05;
         } else if (hitungHargaTotal() < 75000) {
-            hitungHargaTotal();
+            System.out.println("Tidak mendapat diskon");
         }
 
         return diskon;
@@ -61,7 +63,9 @@ class Buku06 {
 
     int hitungHargaBayar() {
         int bayar = hitungHargaTotal() - (int)hitungDiskon();
-
+        System.out.println("Total harga : " + hitungHargaTotal());
+        System.out.println("Total diskon : " + hitungDiskon());
+        System.out.println("Harga yang harus dibayar : " + bayar);
         return bayar;
     }
 }
