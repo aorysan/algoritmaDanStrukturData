@@ -20,6 +20,7 @@ class Buku06 {
         } else if (jml > this.stok) {
             System.out.println("Jumlah yang ingin dibeli melebihi stok yang tersedia saat ini");
         }
+        System.out.println("Sebanyak " + jml + " buku telah terjual");
     }
 
     void restok(int jml) {
