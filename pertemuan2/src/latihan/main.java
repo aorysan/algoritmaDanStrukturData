@@ -1,6 +1,6 @@
 package latihan;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         latihan2 nagaBonar = new latihan2(1, 2);
 
