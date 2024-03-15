@@ -23,7 +23,7 @@ public class Mobil {
             int pivotIndex = partition(arr, x, y);
             accel(arr, x, pivotIndex - 1);
             accel(arr, pivotIndex + 1, y);
-        }=
+        }
     }
 
     public static int partition(int[] arr, int x, int y) {
