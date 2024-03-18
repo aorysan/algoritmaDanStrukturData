@@ -6,6 +6,11 @@ public class faktorial {
         for (int i = n; i >= 1; i--) {
             faktor *= i;
         }
+
+        // while(n >= 1) {
+        //     faktor *= n;
+        //     n--;
+        // }
         return faktor;
     }
 

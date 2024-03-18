@@ -20,7 +20,7 @@ public class Main {
             sm[i] = new sum(elemen);
             for(int j = 0; j < elemen; j++) {
                 System.out.print("Masukkan Keuntungan Bulan ke-" + (j + 1) + " : ");
-                sm[j].keuntungan[j] = sc.nextDouble();
+                sm[i].keuntungan[j] = sc.nextDouble();
             }
         }
 

@@ -20,9 +20,9 @@ public class Mobil {
 
     void accel(int arr[], int x, int y) {
         if (x < y) {
-            int pivotIndex = partition(arr, x, y);
-            accel(arr, x, pivotIndex - 1);
-            accel(arr, pivotIndex + 1, y);
+            int mid = partition(arr, x, y);
+            accel(arr, x, mid - 1);
+            accel(arr, mid + 1, y);
         }
     }
 
@@ -31,11 +31,11 @@ public class Mobil {
         int i = x - 1;
 
         for (int j = x; j < y; j++) {
-        if (arr[j] <= highest) {
-            i++;
-            swap(arr, i, j);
+            if (arr[j] <= highest) {
+                i++;
+                swap(arr, i, j);
+            }
         }
-    }
         swap(arr, i + 1, y);
         return i + 1;
     }
