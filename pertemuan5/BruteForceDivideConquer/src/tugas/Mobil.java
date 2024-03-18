@@ -26,7 +26,7 @@ public class Mobil {
         }
     }
 
-    public static int partition(int[] arr, int x, int y) {
+    int partition(int[] arr, int x, int y) {
         int highest = arr[y];
         int i = x - 1;
 
@@ -40,7 +40,7 @@ public class Mobil {
         return i + 1;
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    void swap(int[] arr, int i, int j) {
         int x = arr[i];
         arr[i] = arr[j];
         arr[j] = x;
