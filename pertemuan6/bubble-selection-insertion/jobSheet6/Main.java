@@ -26,15 +26,15 @@ public class Main {
         //     System.out.println(value);
         // }
 
-        // System.out.println();
-        // System.out.println("Data mahasiswa setelah sorting desc berdasarkan ipk(bubble) : ");
-        // list.bubbleSort();
-        // list.tampil();
+        System.out.println();
+        System.out.println("Data mahasiswa setelah sorting desc berdasarkan ipk(bubble) : ");
+        list.bubbleSort();
+        list.tampil();
 
-        // System.out.println();
-        // System.out.println("Data mahasiswa setelah sorting asc berdasarkan ipk(selection) : ");
-        // list.selectionSort();
-        // list.tampil();
+        System.out.println();
+        System.out.println("Data mahasiswa setelah sorting asc berdasarkan ipk(selection) : ");
+        list.selectionSort();
+        list.tampil();
 
         System.out.println();
         System.out.println("Data mahasiswa setelah sorting asc berdasarkan ipk(insertion) : ");
