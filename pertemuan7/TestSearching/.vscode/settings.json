@@ -1,0 +1,9 @@
+{
+  "java.project.sourcePaths": [
+    "src",
+    "jobSheet6/mergeSortTest",
+    "jobSheet6"
+  ],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"]
+}
