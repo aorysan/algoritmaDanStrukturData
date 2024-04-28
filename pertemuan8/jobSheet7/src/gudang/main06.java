@@ -22,14 +22,14 @@ public class main06 {
             System.out.println("3. Tampilkan tumpukan barang");
             System.out.println("4. Lihat barang");
             System.out.println("5. Pencarian");
-            System.out.println("5. Keluar");
+            System.out.println("6. Keluar");
 
             System.out.print("\nSilahkan pilih menu yang Anda inginkan : ");
             int pilihan = scanInt.nextInt();
 
             switch (pilihan) {
                 case 1:
-                    System.out.print("\nsMasukkan kode barang : ");
+                    System.out.print("\nMasukkan kode barang : ");
                     int kode = scanInt.nextInt();
 
                     System.out.print("Masukkan nama barang : ");
@@ -68,6 +68,8 @@ public class main06 {
                     break;
 
                 case 5:
+                    System.out.println("1. Pencarian berdasarkan nama\n2. Pencarian berdasarkan kode\n");
+                
                     System.out.print("Silahkan pilih pencarian : ");
                     int cari = scanInt.nextInt();
 
@@ -75,14 +77,14 @@ public class main06 {
                         case 1:
                         System.out.print("Masukkan nama barang yang ingin dicari : ");
                         String cariNama = scanStr.nextLine();
-                        gudang.cariNama(cariNama, 7);
+                        gudang.cariNama(cariNama, 0);
                             
                             break;
                     
                         default:
                         System.out.print("Masukkan kode barang yang ingin dicari : ");
                         int cariKode = scanInt.nextInt();
-                        gudang.cariKode(cariKode, 7);
+                        gudang.cariKode(cariKode, 0);
                             break;
                     }
 

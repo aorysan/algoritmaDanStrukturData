@@ -29,7 +29,7 @@ class gudang06 {
         if(!cekPenuh()) {
             top++;
             tumpukan[top] = brg;
-            System.out.println("Barang " + brg.nama + " berhasil ditambahkan ke gudang.");
+            System.out.println("Barang " + brg.nama + " berhasil ditambahkan ke gudang.\n");
         } else {
             System.out.println("Gagal! Tumpukan barang di gudang sudah penuh.");
         }
@@ -51,7 +51,7 @@ class gudang06 {
     barang06 lihatBarangTeratas() {
         if(!cekKosong()) {
             barang06 barangTeratas = tumpukan[top];
-            System.out.println("Barang teratas : " + barangTeratas.nama);
+            System.out.println("Barang teratas : " + barangTeratas.nama + "\n");
             return barangTeratas;
         } else {
             System.out.println("Tumpukan barang kosong.");
@@ -91,7 +91,7 @@ class gudang06 {
     void lihatBarangTerbawah() {
         for(int i = 0; i < size; i++) {
             if(tumpukan[i] != null) {
-                System.out.println("Barang terbawah : " + tumpukan[i].nama);
+                System.out.println("Barang terbawah : " + tumpukan[i].nama + "\n");
                 break;
             } else {
                 System.out.println("Tumpukan barang kosong.");
@@ -99,21 +99,21 @@ class gudang06 {
         }
     }
 
-    boolean cariNama(String Nama, int batas) {
-        if(Nama.equalsIgnoreCase(tumpukan[batas].nama)) {
+    boolean cariNama(String nama, int mulai) {
+        if(nama.equalsIgnoreCase(tumpukan[mulai].nama)) {
             System.out.println("Barang ditemukan.");
             return true;
         } else {
-            return cariNama(Nama, batas-1);
+            return cariNama(nama, mulai+1);
         }
     }
 
-    boolean cariKode(int kode, int batas) {
-        if(kode == tumpukan[batas].kode) {
+    boolean cariKode(int kode, int mulai) {
+        if(kode == tumpukan[mulai].kode) {
             System.out.println("Barang ditemukan.");
             return true;
         } else {
-            return cariKode(kode, batas-1);
+            return cariKode(kode, mulai+1);
         }
     }
 }
