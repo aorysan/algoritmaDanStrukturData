@@ -15,8 +15,7 @@
 - Bagian yang perlu diperbaiki :
 > ![alt text](image-2.png)
 - Setelah perbaikan :
-> ![alt text](image-3.png)
-
+> ![alt text](image-13.png)
 2. Berapa banyak data barang yang dapat ditampung di dalam tumpukan? Tunjukkan potongan kode programnya!
 - Data yang dapat ditampung sebanyak 7 data.
 

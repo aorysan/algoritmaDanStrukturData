@@ -62,7 +62,7 @@ class gudang06 {
     void display() {
         if(!cekKosong()) {
             System.out.println("Rincian tumpukan barang di gudang : ");
-            for(int i = 0; i <= top; i++) {
+            for(int i = top; i >= top; i--) {
                 System.out.printf("Kode %d : %s (Kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama, tumpukan[i].kategori);
             }
         } else {
