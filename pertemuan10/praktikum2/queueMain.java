@@ -31,7 +31,7 @@ public class queueMain {
                     System.out.print("Umur : ");
                     int umur = sc.nextInt();
 
-                    System.out.println("Saldo : ");
+                    System.out.print("Saldo : ");
                     double saldo = sc.nextDouble();
 
                     nasabah nb = new nasabah(norek, nama, alamat, umur, saldo);
@@ -55,6 +55,11 @@ public class queueMain {
                     break;
 
                 case 4 :
+                    q.peekrear();
+                
+                    break;
+                
+                case 5 :
                     q.print();
 
                     break;
@@ -69,8 +74,9 @@ public class queueMain {
         System.out.println("Masukkan operasi yang Anda inginkan : ");
         System.out.println("1. Antrian baru");
         System.out.println("2. Antrian keluar");
-        System.out.println("3. Cek Antrian");
-        System.out.println("4. Cek semua antrian");
+        System.out.println("3. Cek Antrian terdepan");
+        System.out.println("4. Cek Antrian terakhir");
+        System.out.println("4. Cek Semua Antrian");
 
         System.out.println("-----------------------------------");
 

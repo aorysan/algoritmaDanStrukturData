@@ -41,6 +41,9 @@ public class queueMain {
                     q.clear();
                     break;
             } 
+            if(q.over == true || q.under == true) {
+                break;
+            }
         } while(pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5);
 
         sc.close();

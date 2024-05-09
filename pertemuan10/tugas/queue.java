@@ -49,6 +49,7 @@ public class queue {
                 if(cekNama.equalsIgnoreCase(data[i].nama)) {
                     System.out.println("Nama\t\t: " + data[i].nama + "\nNo Handphone\t: " + data[i].noHP);
                     System.out.println("Ada di posisi antrian ke : " + (i+1));
+                    break;
                 } else if (!cekNama.equalsIgnoreCase(data[i].nama)){
                     System.out.println("Antrian tidak ditemukan");
                     break;

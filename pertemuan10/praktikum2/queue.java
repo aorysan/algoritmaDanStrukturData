@@ -11,7 +11,7 @@ public class queue {
     }
 
     public boolean isEmpty() {
-        if(size == max) {
+        if(size == 0) {
             return true;
         } else {
             return false;
@@ -34,6 +34,14 @@ public class queue {
         }
     }
 
+    void peekrear() {
+        if(!isEmpty()) {
+            System.out.println("Elemen terakhir : " + data[this.rear].norek + " " + data[this.rear].nama + " " + data[this.rear].alamat + " " + data[this.rear].umur + " " + data[this.rear].saldo);
+        } else {
+            System.out.println("Queue masih kosong");
+        }
+    }
+
     public void print() {
         if(isEmpty()) {
             System.out.println("Queue masih kosong");
@@ -41,10 +49,10 @@ public class queue {
             int i = this.front;
             
             while(i != this.rear) {
-                System.out.println(data[this.front].norek + " " + data[this.front].nama + " " + data[this.front].alamat + " " + data[this.front].umur + " " + data[this.front].saldo);
+                System.out.println(data[i].norek + " " + data[i].nama + " " + data[i].alamat + " " + data[i].umur + " " + data[i].saldo);
                 i = (i + 1) % max;
             }
-            System.out.println(data[this.front].norek + " " + data[this.front].nama + " " + data[this.front].alamat + " " + data[this.front].umur + " " + data[this.front].saldo);
+            System.out.println(data[i].norek + " " + data[i].nama + " " + data[i].alamat + " " + data[i].umur + " " + data[i].saldo);
             System.out.println("Jumlah elemen = " + size);
         }
     }

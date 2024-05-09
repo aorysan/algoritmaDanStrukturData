@@ -1,6 +1,7 @@
 public class queue {
     int data[];
     int front, rear, size, max;
+    boolean over, under;
 
     queue(int n) {
         this.max = n;
@@ -60,6 +61,7 @@ public class queue {
     void enqueue(int dt) {
         if(isFull()){
             System.out.println("Queue penuh");
+            over = true;
         } else {
             if(isEmpty()) {
                 this.front = this.rear = 0;
@@ -80,6 +82,7 @@ public class queue {
 
         if(isEmpty()) {
             System.out.println("Queue masih kosong");
+            under = true;
         } else {
             dt = data[this.front];
             size--;
