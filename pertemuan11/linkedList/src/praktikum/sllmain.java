@@ -17,7 +17,7 @@ public class sllmain {
         singLL.insertAfter(700, 999);
         singLL.print();
         
-        singLL.insertAt(3, 833);
+        singLL.insertAt(-1, 833);
         singLL.print();
 
         System.out.println();

@@ -65,7 +65,7 @@ public class singleLinkedList {
                 }
             }
             temp = temp.next;
-        } while(temp == null);
+        } while(temp != null);
     }
 
     void insertAt(int index, int input) {
@@ -126,7 +126,7 @@ public class singleLinkedList {
     }
 
     void removeLast() {
-        if(isEmpty()) {
+        if(!isEmpty()) {
             System.out.println("Linked list masih kosong, tidak dapat dihapus");
         } else if(head == tail) {
             head = tail = null;

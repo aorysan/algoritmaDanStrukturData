@@ -16,10 +16,10 @@ public class SLL {
         } else {
             mahasiswa tmp = head;
     
-            System.out.print("Isi linked list: ");
+            System.out.println("Isi linked list: ");
     
             while(tmp != null) {
-                System.out.print(tmp.nim + "\t");
+                System.out.println(tmp.nim + "\t" + tmp.nama);
                 tmp = tmp.next;
             }
             System.out.println("");
@@ -65,7 +65,7 @@ public class SLL {
                 }
             }
             temp = temp.next;
-        } while(temp == null);
+        } while(temp != null);
     }
 
     void insertAt(int index, int nim, String nama) {
@@ -126,7 +126,7 @@ public class SLL {
     }
 
     void removeLast() {
-        if(isEmpty()) {
+        if(!isEmpty()) {
             System.out.println("Linked list masih kosong, tidak dapat dihapus");
         } else if(head == tail) {
             head = tail = null;
