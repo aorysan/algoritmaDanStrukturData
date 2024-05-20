@@ -36,7 +36,7 @@ public class Main {
                     System.out.print("Film ini akan diletakkan pada urutan ke-");
                     int index = sc.nextInt();
                     
-                    q.add(data, index);
+                    q.add(data, index-1);
                     break;
 
                 case 4:

@@ -50,7 +50,7 @@ public class dll {
             throw new Exception("Index melebihi batas");
         } else {
             node current = head;
-            int i = 1;
+            int i = 0;
             
             while (i < index) {
                 current = current.next;
@@ -70,8 +70,8 @@ public class dll {
                 current.prev = newNode;
                 System.out.println("\nBerhasil ditambahkan\n");
             }
-            size++;
         }
+        size++;
     }
 
     void print() {
