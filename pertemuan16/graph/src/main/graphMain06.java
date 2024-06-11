@@ -36,7 +36,7 @@ public class graphMain06 {
                 gedung.removeEdge(asal, tujuan);
 
                 break;
-        
+
             case 3:
                 System.out.print("Masukkan gedung asal : ");
                 asal = new Scanner(System.in).nextInt();
@@ -99,7 +99,7 @@ public class graphMain06 {
         System.out.println("3. Cek Degree");
         System.out.println("4. Print graph");
         System.out.println("5. Cek edge");
-        System.out.println("6. Hapus semua edge");
+        System.out.println("6. Hapus semua vertex");
         System.out.println("7. Jumlah edge\n");
         System.out.print("Silahkan pilih menu Anda : ");
     }
